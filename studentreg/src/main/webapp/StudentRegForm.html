@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="ISO-8859-1">
+    <title>Student Registration Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #box{
+            margin:30px auto; 
+            width: 500px;
+            background-image: url(student.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+        }
+        #tab{
+            margin: 30px auto;
+        }
+        #sub{
+            width: 100px;
+            height: 35px;       
+        }
+        #head{
+            color: rgb(251, 255, 0);
+        }
+        .inp1{
+            outline: none;
+            font-size: 17px;
+        }
+        .td1{
+            font-size: 20px;
+        }
+        tr{
+            margin-top: 40px;
+            color: rgb(251, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <div id="box" align="center" >
+    <form action="SaveStudent" method="post">
+        <table id="tab">
+            <tr><h1 id="head">Student Registration Form</h1></tr>
+            <tr>
+                <td class="td1">Enter Id:</td>
+                <td><input class="inp1" type="text" placeholder="Enter Id Here" name="id"></td>
+            </tr>
+            <tr>
+                <td class="td1">Enter Name:</td>
+                <td><input class="inp1" type="text" placeholder="Enter Name Here" name=name></td>
+            </tr>
+            <tr>
+                <td class="td1">Enter Email:</td>
+                <td><input class="inp1" type="email" placeholder="Enter Email Here" name="email"></td>
+            </tr>
+            <tr>
+                <td class="td1">Enter Address:</td>
+                <td><input class="inp1" type="text" placeholder="Enter Address Here" name="address"></td>
+            </tr>
+        </table>
+        <input type="submit" id="sub" value="Save">
+    </form>
+    </div>
+</body>
+</html>
